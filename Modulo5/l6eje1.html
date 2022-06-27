@@ -9,28 +9,22 @@
     <body fibo>
         <script >
 
-            function eje1_lecc6(){
-
-                var a=0, b=1, c=0, i;
-
-                let numeroDeElementos= parseInt(prompt("Ingrese el número de elementos a imprimir:"));
-                document.write("La serie de Fibonacci es:");
-                
-                    for(i=1;i<=numeroDeElementos;i++)
-                        {
-                        
-                        document.write('<br>');
-                        document.write(a);
-                        
-                        c= (a + b);
-                        a=b;
-                        b=c;
-                    
-                        }
-
-
+                function eje1_lecc6()
+                {
+                    var total=0;
+                    var numero = parseInt(prompt("Ingrese el número a multiplicar  "));
+                    document.write("La tabla del "+numero+" es: <br>")
+                    var i=0;
+                    while(i<=50){
+                        total=numero*i;
+                        document.write(" "+numero+" * "+i+" = "+total+"<br>");
+                        i++;
                     }
-                    eje1_lecc6();
+
+
+                }
+ 
+                 eje1_lecc6();
     
             </script>
  
