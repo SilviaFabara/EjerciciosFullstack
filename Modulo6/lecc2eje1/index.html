@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>08 - arrays</title>
+<meta name="author" content="francesc ricart"/>
+</head>
+<body>
+    <script>
+            var amigos = ["pedro","maria","joan","pili"];
+
+            // 1- queremos que escriba "mis amigos son maria y joan. rellena los huecos."
+            document.write("Mis amigos son " + amigos[1] + "  y  "+ amigos[2]+"<br><br>");
+
+            // 2- ¿dónde está el fallo?
+            var enemigos = ["scipion" , "scorpio" , "black"]; //var enemigos = ["scipion" + "scorpio" + "black"]; (Incorrecto porq se usa coma para separar entre elementos de un arreglo)
+
+            // 3- escribe en el documento web "scorpio es peor que black" de modo que scorpio esté en negrita y la letra sea de color rojo.
+            document.write("<b style='color:red;font-weight:bold;'>"+enemigos[1]+ "</b>"+" es peor que " + enemigos[2]+"<br><br>" );
+
+            // 4- escribe una instrucción que devuelva la longitud del array amigos sea cual sea el número de datos almacenados en su interior.
+             document.write("La longitud del arreglo amigos es : "+amigos.length)
+
+            // 5- "aitana" es también tu amiga. Escribe una instrucción que la añada al final de la lista amigos
+            amigos.push("Aitana");
+           
+            // 6 - "pedro" ha cambiado de nombre. ahora se llama "nacho".actualiza con una instrucción tu lista de amigos
+            for(let i=0;i<amigos.length;i++){
+                if(amigos[i]=="pedro"){
+                    amigos[i]="nacho";
+                }
+
+            }
+           
+            // 7 - "tor" es ahora tu enemigo. añádelo con una instrucción al final de tu lista de enemigos.
+            enemigos.push("tor");
+            
+    </script>
+    </body>
+</html>
