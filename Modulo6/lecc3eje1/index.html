@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LECC3 EJERCICIO 1 MODULO 6</title>
+</head>
+<body>
+    <script>
+            function funciones(min1,max1)
+            
+            {
+            
+            var min=parseInt(min1);
+            var max=parseInt(max1);
+            const nombres = ["Adrián","Juan","Marcos", "Ignacio" ,"Raul","Gabriela","Rosario","Selene","Ana","María"];
+                   
+                        for(let i=0;i<nombres.length;i++)
+                        {
+                        document.write(nombres[i]+" Y SU NUMERO RANDOM ES "+Math.floor(Math.random()* (max - min + 1) + min)+"<br>");
+                        
+                        }
+
+            }
+
+            funciones(1,100);
+
+    </script>
+</body>
+</html>
