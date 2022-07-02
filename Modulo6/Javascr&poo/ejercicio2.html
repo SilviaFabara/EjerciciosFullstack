@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            function ejercicio2(){
+                        var aux;
+                        let inicio=["unacadena",3,9,1,10,500,1,10,true];
+
+                                for(var i=0;i<inicio.length;i++){
+                                    for(var j=0;j<inicio.length-i;j++){
+
+                                    if(inicio[j]<inicio[j+1]){
+                                        aux=inicio[j];
+                                        inicio[j]=inicio[j+1];
+                                        inicio[j+1]=aux;
+
+                                        
+
+
+                                    }
+
+                                    }
+                                }
+                                for(var m=0;m<inicio.length;m++) {
+                                    if((typeof(inicio[m])!="string")&&(typeof(inicio[m])!="boolean")){
+                                    console.log(inicio[m]);
+                                    }
+
+                                }
+                                
+                                    
+
+                        }
+   
+
+
+                            ejercicio2();
+
+        </script>
+</body>
+</html>
